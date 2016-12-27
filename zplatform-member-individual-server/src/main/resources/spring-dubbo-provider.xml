@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+	http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+	
+	
+	
+	<dubbo:service interface="com.zlebank.zplatform.member.individual.service.MemberApplyService" ref="memberApplyServiceImpl" version="1.0" timeout="3000"/>
+	
+	<dubbo:service interface="com.zlebank.zplatform.member.individual.service.MemberBankCardService" ref="memberBankCardServiceImpl" version="1.0" timeout="3000"/>
+	
+	<dubbo:service interface="com.zlebank.zplatform.member.individual.service.MemberInfoService" ref="memberInfoServiceImpl" version="1.0" timeout="3000"/>
+	
+	<dubbo:service interface="com.zlebank.zplatform.member.individual.service.MemberOperationService" ref="memberOperationServiceImpl" version="1.0" timeout="3000"/>
+	
+	<dubbo:service interface="com.zlebank.zplatform.member.individual.service.MemberService" ref="memberServiceImpl" version="1.0" timeout="3000"/>
+	
+	<dubbo:service interface="com.zlebank.zplatform.member.individual.service.PersonService" ref="personServiceImpl" version="1.0" timeout="3000"/>
+	
+	<dubbo:service interface="com.zlebank.zplatform.member.individual.service.PrimayKeyService" ref="primayKeyServiceImpl" version="1.0" timeout="3000"/>
+	
+	<dubbo:service interface="com.zlebank.zplatform.member.individual.service.MemberAccountService" ref="memberAccountServiceImpl" version="1.0" timeout="3000"/>
+	
+	
+</beans>
